@@ -1,0 +1,193 @@
+:root {
+    /* Colors */
+    --primary-color: #4e54c8;
+    --primary-dark: #3a3f9e;
+    --primary-light: #8f94fb;
+    --secondary-color: #f9a826;
+    --text-color: #23324d;
+    --text-light: #718096;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --white: #ffffff;
+    --black: #000000;
+    --red: #ff4757;
+    --facebook-blue: #1877f2;
+    --twitter-blue: #00aced;
+    --instagram-pink: #c13584;
+    --youtube-red: #FF0000;
+    --border-color: rgba(0, 0, 0, 1);
+    --loading-screen-color1: #4e54c8;
+    --loading-screen-color2: #8f94fb;
+    --chapter-card: #d9e3eb;
+
+    /* Spacing */
+    --spacing-xs: 5px;
+    --spacing-sm: 10px;
+    --spacing-md: 15px;
+    --spacing-lg: 20px;
+    --spacing-xl: 25px;
+    --spacing-2xl: 30px;
+    --spacing-3xl: 40px;
+    --spacing-4xl: 50px;
+    --spacing-5xl: 80px;
+
+    /* Font Sizes */
+    --font-xs: 0.9rem;
+    --font-sm: 0.95rem;
+    --font-base: 1rem;
+    --font-lg: 1.1rem;
+    --font-xl: 1.2rem;
+    --font-2xl: 1.6rem;
+    --font-3xl: 1.8rem;
+    --font-4xl: 2rem;
+    --font-5xl: 2.2rem;
+    --font-6xl: 2.3rem;
+    --font-7xl: 2.5rem;
+    --font-8xl: 2.6rem;
+
+    /* Dimensions */
+    --profile-img-lg: 180px;
+    --profile-img-md: 160px;
+    --profile-img-sm: 140px;
+    --profile-img-xs: 120px;
+    --cover-height-lg: 400px;
+    --cover-height-md: 350px;
+    --cover-height-sm: 300px;
+    --cover-height-xs: 250px;
+    --story-cover-lg: 340px;
+    --story-cover-md: 320px;
+    --story-cover-sm: 280px;
+    --button-height: 45px;
+    --button-width: 50px;
+    --theme-toggle-lg: 60px;
+    --theme-toggle-sm: 50px;
+    --border-width: 3px;
+    --border-width-sm: 2px;
+    --border-width-xs: 1px;
+    --underline-width: 60px;
+    --underline-height: 3px;
+    --underline-height-sm: 4px;
+    --grid-min-width-lg: 320px;
+    --grid-min-width-md: 280px;
+    --grid-min-width-sm: 220px;
+
+    /* Shadows */
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    --shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 20px rgba(78, 84, 200, 0.3);
+    --shadow-xl: 0 15px 30px rgba(0, 0, 0, 0.15);
+    --shadow-2xl: 0 20px 50px rgba(0, 0, 0, 0.3);
+    --shadow-dark: 0 4px 6px rgba(0, 0, 0, 0.2);
+    --shadow-dark-hover: 0 10px 15px rgba(0, 0, 0, 0.3);
+    --shadow-button: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --shadow-button-hover: 0 8px 20px rgba(0, 0, 0, 0.2);
+    --shadow-loading: 0 10px 30px rgba(0, 0, 0, 0.2);
+    --shadow-text: 0 2px 10px rgba(0, 0, 0, 0.2);
+
+    /* Border Radius */
+    --border-radius: 12px;
+    --border-radius-sm: 5px;
+    --border-radius-md: 10px;
+    --border-radius-lg: 30px;
+    --border-radius-circle: 50%;
+    --border-radius-underline: 2px;
+    --border-radius-small: 3px;
+
+    /* Transitions */
+    --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --transition-fast: all 0.3s ease-out;
+    --transition-slow: all 0.5s ease;
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-smooth: all 0.6s ease-out;
+    --transition-theme: background-color 0.8s ease, color 0.5s ease;
+    --transition-transform: transform 0.6s ease;
+    --transition-opacity: opacity 0.5s ease;
+
+    /* Animation Durations */
+    --duration-fast: 0.3s;
+    --duration-normal: 0.5s;
+    --duration-slow: 0.8s;
+    --duration-bubble: 15s;
+
+    /* Z-index */
+    --z-negative: -1;
+    --z-base: 1;
+    --z-overlay: 2;
+    --z-modal: 10;
+    --z-theme-toggle: 100;
+    --z-modal-overlay: 1000;
+    --z-loading: 9999;
+
+    /* Opacity */
+    --opacity-low: 0.05;
+    --opacity-medium: 0.1;
+    --opacity-high: 0.2;
+    --opacity-very-high: 0.3;
+    --opacity-disabled: 0.5;
+    --opacity-ghost: 0.7;
+    --opacity-visible: 0.9;
+
+    /* Line Heights */
+    --line-height-tight: 1.7;
+    --line-height-normal: 1.8;
+
+    /* Container Sizes */
+    --container-max-width: 1200px;
+    --modal-max-width: 850px;
+    --content-max-width: 700px;
+    --small-content-max-width: 500px;
+
+    /* Heights */
+    --nav-height: 70px;
+    --modal-max-height: 90vh;
+
+    /* Titles */
+    --title-main: "فاتن | FATEN";
+    --title-stories: "آخر القصص";
+    --title-favorites: "قصصي المفضلة";
+    --title-chapters: "فصول القصة";
+
+    /* Author Description */
+    --author-description: "روائي وقاص، أسعى إلى خلق عوالم تلامس الواقع وتتجاوزه. مؤلف عدة روايات وقصص قصيرة نالت استحسان القراء والنقاد.";
+
+    /* Buttons & Tabs */
+    --tab-stories: "القصص";
+    --tab-favorites: "المفضلة";
+
+    /* Placeholders */
+    --placeholder-search: "ابحث عن قصة...";
+
+    /* Empty States */
+    --empty-stories: "لا توجد قصص متاحة حالياً";
+    --empty-favorites: "لم تقم بإضافة أي قصة إلى المفضلة بعد";
+
+    /* Social Media */
+    --social-facebook: "فيسبوك";
+    --social-twitter: "تويتر";
+    --social-instagram: "إنستجرام";
+    --social-youtube: "يوتيوب";
+
+    /* Accessibility */
+    --alt-logo: "فاتن | FATEN";
+    --alt-profile: "صورة الكاتب";
+
+    /* Modal */
+    --close-modal: "إغلاق";
+}
+
+/* Dark Mode Variables */
+.dark-mode {
+    --primary-color: #8f94fb;
+    --primary-dark: #6a70e0;
+    --primary-light: #a7abfb;
+    --secondary-color: #f9a826;
+    --text-color: #f8fafc;
+    --text-light: #cbd5e0;
+    --bg-color: #1a202c;
+    --card-bg: #2d3748;
+    --shadow: var(--shadow-dark);
+    --shadow-hover: var(--shadow-dark-hover);
+    --border-color: rgb(255, 255, 255);
+    --loadingScreen-opacity: 1;
+    --chapter-card: #1d2430;
+}
