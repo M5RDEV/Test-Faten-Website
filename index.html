@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FATEN | فاتن</title>
+    <link rel="icon" href="img/Logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="main/style/style.css">
+    <link rel="stylesheet" href="main/data/variables.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="logo-container">
+            <img src="img/Logo.jpg" alt="فاتن | FATEN" class="loading-logo">
+            <div class="loading-text">
+                <span class="writer-name">فاتن | FATEN</span>
+            </div>
+        </div>
+        <div class="bubbles-container">
+            <div class="bubble" style="--size: 0.5rem; --distance: 6rem; --duration: 4s; --delay: 0s;"></div>
+            <div class="bubble" style="--size: 0.7rem; --distance: 5rem; --duration: 6s; --delay: 1s;"></div>
+            <div class="bubble" style="--size: 0.4rem; --distance: 7rem; --duration: 5s; --delay: 0.5s;"></div>
+            <div class="bubble" style="--size: 0.6rem; --distance: 6.5rem; --duration: 7s; --delay: 1.5s;"></div>
+            <div class="bubble" style="--size: 0.3rem; --distance: 5.5rem; --duration: 4.5s; --delay: 0.2s;"></div>
+        </div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" id="theme-toggle">
+        <i class="fas fa-moon" id="theme-icon"></i>
+    </div>
+
+    <header>
+        <div class="cover"></div>
+        <div class="profile">
+            <img src="img/Logo.jpg" alt="صورة الكاتب" class="profile-img">
+            <div class="profile-info">
+                <h1>فاتن | FATEN</h1>
+                <p>روائي وقاص، أسعى إلى خلق عوالم تلامس الواقع وتتجاوزه. مؤلف عدة روايات وقصص قصيرة نالت استحسان القراء
+                    والنقاد.</p>
+            </div>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Navigation Tabs -->
+        <div class="nav-tabs">
+            <div class="nav-tab active" data-tab="stories">القصص</div>
+            <div class="nav-tab" data-tab="favorites">المفضلة</div>
+        </div>
+
+        <!-- Stories Section -->
+        <section class="stories-section" id="stories-section">
+            <h2 class="section-title">آخر القصص</h2>
+            <div class="stories-grid" id="stories-grid"></div>
+        </section>
+
+        <!-- Favorites Section -->
+        <section class="favorites-section" id="favorites-section">
+            <h2 class="section-title">قصصي المفضلة</h2>
+            <div class="stories-grid" id="favorites-grid"></div>
+        </section>
+    </div>
+
+    <!-- Chapters Modal -->
+    <div class="modal-overlay" id="chapters-modal">
+        <div class="chapters-modal">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-story-title"></h3>
+                <button class="close-modal" id="close-modal">&times;</button>
+            </div>
+            <div class="modal-content">
+                <h4 class="chapters-title">فصول القصة</h4>
+                <div class="chapters-list" id="chapters-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main/data/siteTexts.js"></script>
+    <script src="main/data/stories.js"></script>
+    <script src="main/script/main.js"></script>
+
+</body>
+
+</html>
